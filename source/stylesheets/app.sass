@@ -1,0 +1,125 @@
+// Your custom settings file to override Foundation defaults
+@import settings
+
+// Comment out this import if you are customizing you imports below
+@import foundation
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+@import "compass/css3"
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+@import "foundation/mixins/font-size"
+
+// Must include next two for semantic grid to work
+
+@import "foundation/mixins/respond-to"
+// @import "foundation/mixins/semantic-grid";
+
+// @import "modular-scale";
+// @import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+
+// Media Queries Overrides
+// @import "foundation/components/modules/mqueries";
+
+=placeholder-style
+  color: $mainColor
+  // add your defaults here.
+  // if you need more than one style-group you can either create several mixins,
+  // or just name the style-groups and take a single style-group-name argument.
+
+=apply-placeholders
+  &::-webkit-input-placeholder
+    +placeholder-style
+  &:-moz-placeholder
+    +placeholder-style
+  &.placeholder
+    +placeholder-style
+
+.placeholders
+  +apply-placeholders
+
+.bb
+  border: 1px solid blue
+
+.capitalize
+  text-transform: uppercase
+
+body
+  background-color: $backgroundColor
+
+section.header
+  background: #f04b42 url(/images/header.png) repeat-x bottom left
+  height: 126px
+
+section.home
+  background: #f04b42 url(/images/d8n.png) repeat-x bottom left
+  min-height: 500px
+
+  .splash
+    min-height: 675px
+    background: transparent url(/images/splash.png) no-repeat bottom center
+
+section.join
+  margin-top: 6em
+
+  .panel
+    padding: 0
+    input[type="text"]
+      color: $mainColor
+      margin: 0
+      border: 0
+      background-color: transparent
+      font-size: 1.4em
+      padding: 20px 10px
+    .row
+      .two
+        border-left: 3px solid $mainColor
+        a
+          padding-right: 1em
+          +font-size(18)
+          width: 100%
+          line-height: 40px
+
+.nav-bar
+  background: none
+  > li
+    border: none
+  > li:last-child
+    border: none
+  > li.active
+    font-weight: bold
+  > li.active, li:hover, li.active:hover
+    background: none
+
+.panel
+  background: transparent
+  border: solid 4px $mainColor
+
