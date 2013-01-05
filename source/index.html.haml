@@ -4,14 +4,72 @@ title: Dayton Ruby Brigade
 
 %section.home
   .row
-    .twelve.columns.centered.text-center.splash
+    .twelve.columns.centered.text-center
+      .splash
+        %h1.hide-text
+          Dayton Ruby Brigade
+        %h2.hide-text
+          Attention Rubyist: Dayton Ohio knows what ruby is and how to use it!
+      %h2
+        A Southern Ohio based group of local developers who meet to talk about
+        Ruby and lean new things.
 
-%section.join
+%section.banner
   .row
-    .ten.columns.centered
-      .panel
+    .twelve.columns
+      .two.mobile-twelve.columns.text-center
+        = image_tag 'ruby-ribbon.png', width: 71, height: 69
+      .ten.columns.message
         .row
-          .nine.columns
-            %input.placeholders{type: 'text', placeholder: 'Join our mailing list'}
-          .two.columns
-            %a.right.text-center.capitalize{:href => "#"} Submit
+          .eleven.columns
+            %h4.capitalize
+              Next Meeting:
+              %span
+                Tuesday, Jan 22 2013 at 6:00PM
+        .row
+          .eleven.columns
+            %h5.capitalize
+              Location:
+              %span
+                Littlelines HQ 50 Chestnut Street Suite 224 Beavercreek, Ohio 45458
+
+
+%section.manifesto
+  .row
+    .twelve.columns.centered
+      .row
+        .six.columns
+          %h3.text-center About
+          %p
+            You can start by signing up for email updates. Then check out the fun people who thought this Ruby Group would be a
+            good idea. Then be sure to clear your calender for the next meeting.
+        .six.columns
+          %h3.text-center Why?
+          %p
+            We are excited that you have come here to learn how to get involved in the growing Ruby community here in Dayton. If
+            you have any questions hit us up on our twitter page or fill out the contact form below.
+
+      .row
+        .three.columns.mobile-two.text-center
+          .social-circle
+            - link_to '#', :rel => "external" do
+              = image_tag '/images/icon-locate.png'
+        .three.columns.mobile-two.text-center
+          .social-circle
+            - link_to 'https://twitter.com/daytonrb', :rel => "external" do
+              = image_tag '/images/icon-twitter.png'
+        .three.columns.mobile-two.text-center
+          .social-circle
+            - link_to 'mailto:daytonrb@littlelines.com', :rel => "external" do
+              = image_tag '/images/icon-mail.png'
+        .three.columns.mobile-two.text-center
+          .social-circle
+            - link_to 'http://littlelines.com', :rel => "external" do
+              = image_tag '/images/icon-external.png'
+
+%section.sponsors
+  .row
+    .twelve.columns.centered
+
+
+

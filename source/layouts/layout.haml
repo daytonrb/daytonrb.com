@@ -6,41 +6,29 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     / Use title if it's in the page YAML frontmatter
     %title= data.page.title || "The Middleman"
+    %link{:href => "/fonts/ss-social.css", :rel => "stylesheet"}/
     = stylesheet_link_tag "app"
     = javascript_include_tag  "all"
 
   %body{:class => page_classes}
 
-    %section.header
-
-      .row.hide
-        .three.columns
-        .nine.columns
-          %ul.nav-bar.right{"data-magellan-expedition" => "fixed"}
-            %li{"data-magellan-arrival" => "home"}
-              %a{:href => "#"} Home
-            %li{"data-magellan-arrival" => "about"}
-              %a{:href => "#"} About
-            %li{"data-magellan-arrival" => "events"}
-              %a{:href => "#"} Events
-            %li{"data-magellan-arrival" => "contact"}
-              %a{:href => "#"} Contact
-
     = yield
 
-    %footer.row.hide
-      .twelve.columns
-        %hr/
-        .row
-          .six.columns
-            %p © Copyright no one at all. Go to town.
-          .six.columns
-            %ul.link-list.right
-              %li
-                %a{:href => "#"} Link 1
-              %li
-                %a{:href => "#"} Link 2
-              %li
-                %a{:href => "#"} Link 3
-              %li
-                %a{:href => "#"} Link 4
+    %footer
+      .row
+        .twelve.columns
+          %br/
+          .row
+            .six.columns
+              %p
+                Designed and build by
+                = link_to "Littlelines", "http://littlelines.com"
+                2012
+            .six.columns
+              %ul.link-list.right
+                %li
+                  %a{:href => "http://twitter.com/daytonrb"}
+                    %span.ss-social.ss-twitter
+                %li
+                  %a{:href => "http://github.com/littleline"}
+                    %span.ss-social.ss-octocat

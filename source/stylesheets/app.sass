@@ -1,25 +1,16 @@
 // Your custom settings file to override Foundation defaults
 @import settings
-
-// Comment out this import if you are customizing you imports below
 @import foundation
-
-// ----------------------------------------
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
-
 @import "compass/css3"
 // @import "foundation/settings";
 // @import "foundation/functions/all";
 
 // Control which mixins you have access too
-
 // @import "foundation/mixins/clearfix";
 // @import "foundation/mixins/css-triangle";
 @import "foundation/mixins/font-size"
 
 // Must include next two for semantic grid to work
-
 @import "foundation/mixins/respond-to"
 // @import "foundation/mixins/semantic-grid";
 
@@ -49,77 +40,94 @@
 // Media Queries Overrides
 // @import "foundation/components/modules/mqueries";
 
-=placeholder-style
-  color: $mainColor
-  // add your defaults here.
-  // if you need more than one style-group you can either create several mixins,
-  // or just name the style-groups and take a single style-group-name argument.
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif)
+@import url(http://fonts.googleapis.com/css?family=PT+Sans)
 
-=apply-placeholders
-  &::-webkit-input-placeholder
-    +placeholder-style
-  &:-moz-placeholder
-    +placeholder-style
-  &.placeholder
-    +placeholder-style
 
-.placeholders
-  +apply-placeholders
+.hide-text
+  font: 0/0 a
+  text-shadow: none
+  color: transparent
 
 .bb
   border: 1px solid blue
 
+.bg
+  border: 1px solid green
+
 .capitalize
   text-transform: uppercase
+
+.ss-social
+  +font-size(18)
+
+h2, h3, h4, h5, h6
+  span
+    color: $mainColor
+
+p
+  +font-size(16)
+  line-height: 1.8
 
 body
   background-color: $backgroundColor
 
 section.header
-  background: #f04b42 url(/images/header.png) repeat-x bottom left
-  height: 126px
+  height: 20px
 
 section.home
-  background: #f04b42 url(/images/d8n.png) repeat-x bottom left
+  padding: 2em 0 0 0
   min-height: 500px
+  background: #f04b42 url(/images/top-bg.png) repeat 0 0
+
+  .row:first-child
+    height: 100%
+    padding-bottom: 4em
+    background: transparent url(/images/skyline.png) no-repeat bottom center
 
   .splash
-    min-height: 675px
-    background: transparent url(/images/splash.png) no-repeat bottom center
+    margin: 0 auto
+    background: transparent url(/images/splash.png) no-repeat top center
+    background-size: 100%
+    max-height: 314px
+    max-width: 719px
+    padding-bottom: 36.25%
 
-section.join
-  margin-top: 6em
+section.banner
+  background-color: $white
 
-  .panel
-    padding: 0
-    input[type="text"]
-      color: $mainColor
-      margin: 0
-      border: 0
-      background-color: transparent
-      font-size: 1.4em
-      padding: 20px 10px
-    .row
-      .two
-        border-left: 3px solid $mainColor
-        a
-          padding-right: 1em
-          +font-size(18)
-          width: 100%
-          line-height: 40px
-
-.nav-bar
-  background: none
-  > li
-    border: none
-  > li:last-child
-    border: none
-  > li.active
+  h4, h5
     font-weight: bold
-  > li.active, li:hover, li.active:hover
-    background: none
+    line-height: 0.3em
+    +respondTo(smallScreen)
+      line-height: 1em
+    span
+      text-transform: none
+  img
+    margin-top: 20%
+    +respondTo(smallScreen)
+      margin-top: 0
+  .message
+    padding: 2em 0
 
-.panel
-  background: transparent
-  border: solid 4px $mainColor
 
+section.manifesto
+  +box-shadow(rgba(black, 0.40) 0 1px 5px -1px inset)
+  min-height: 30em
+  background: #f2e8da url(/images/sand-bg.png) repeat 0 0
+
+  .social-circle
+    margin-bottom: 1em
+    max-width: 100%
+    background: transparent url(/images/red-circle.png) no-repeat bottom center
+
+section.sponsors
+  padding-top: 0
+  background: #fff url(/images/paper-bg.png) repeat 0 0
+
+  .row:first-child
+    min-height: 30em
+    background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center
+
+footer
+  background-color: #dbd2c6
