@@ -7,6 +7,8 @@
     / Use title if it's in the page YAML frontmatter
     %title= data.page.title || "The Middleman"
     %link{:href => "/fonts/ss-social.css", :rel => "stylesheet"}/
+    %link{:href => "/images/favicon.png", :rel => "shortcut icon"}/
+
     = stylesheet_link_tag "app"
     = javascript_include_tag  "all"
 
@@ -24,11 +26,3 @@
                 Designed and build by
                 = link_to "Littlelines", "http://littlelines.com"
                 2012
-            .six.columns
-              %ul.link-list.right
-                %li
-                  %a{:href => "http://twitter.com/daytonrb"}
-                    %span.ss-social.ss-twitter
-                %li
-                  %a{:href => "http://github.com/littleline"}
-                    %span.ss-social.ss-octocat

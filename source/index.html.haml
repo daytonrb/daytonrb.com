@@ -4,7 +4,7 @@ title: Dayton Ruby Brigade
 
 %section.home
   .row
-    .twelve.columns.centered.text-center
+    .twelve.columns.centered
       .splash
         %h1.hide-text
           Dayton Ruby Brigade
@@ -24,15 +24,7 @@ title: Dayton Ruby Brigade
           .eleven.columns
             %h4.capitalize
               Next Meeting:
-              %span
-                Tuesday, Jan 22 2013 at 6:00PM
-        .row
-          .eleven.columns
-            %h5.capitalize
-              Location:
-              %span
-                Littlelines HQ 50 Chestnut Street Suite 224 Beavercreek, Ohio 45458
-
+              = link_to "Tuesday, Jan 22 2013 at 6:00PM", "#"
 
 %section.manifesto
   .row
@@ -49,27 +41,90 @@ title: Dayton Ruby Brigade
             We are excited that you have come here to learn how to get involved in the growing Ruby community here in Dayton. If
             you have any questions hit us up on our twitter page or fill out the contact form below.
 
-      .row
-        .three.columns.mobile-two.text-center
-          .social-circle
-            - link_to '#', :rel => "external" do
-              = image_tag '/images/icon-locate.png'
-        .three.columns.mobile-two.text-center
-          .social-circle
-            - link_to 'https://twitter.com/daytonrb', :rel => "external" do
-              = image_tag '/images/icon-twitter.png'
-        .three.columns.mobile-two.text-center
-          .social-circle
-            - link_to 'mailto:daytonrb@littlelines.com', :rel => "external" do
-              = image_tag '/images/icon-mail.png'
-        .three.columns.mobile-two.text-center
-          .social-circle
-            - link_to 'http://littlelines.com', :rel => "external" do
-              = image_tag '/images/icon-external.png'
-
-%section.sponsors
+%section.calendar
   .row
     .twelve.columns.centered
+      .row.ribbon
+      .row
+        .six.columns
+          %h3.text-center Where We Meet
+          %p
+            Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strive to keep to the principle of less slides more code.
+          %p
+            = link_to "Littlelines HQ", "http://littlelines.com", :rel => 'external'
+            %br/
+            50 Chestnut Street
+            %br/
+            Suite 224
+            %br/
+            Beavercreek, Ohio 45440
+          %p
+            = link_to "#" do
+              = image_tag 'icon-locate.png'
+            = link_to "Get Directions", "#"
 
+        .six.columns
+          %h3.text-center Upcoming Events
+          .row.event
+            .two.columns.date.text-center
+              %h4
+                Feb
+                %br/
+                00
+            .ten.columns.location
+              %h5
+                Dayton Ruby Brigade 6:00 PM
+                = link_to "@ Littlelines HQ"
 
+          .row.event
+            .two.columns.date.text-center
+              %h4
+                Mar
+                %br/
+                00
+            .ten.columns.location
+              %h5
+                Dayton Ruby Brigade 6:00 PM
+                = link_to "@ Littlelines HQ"
 
+          .row.event
+            .two.columns.date.text-center
+              %h4
+                Apr
+                %br/
+                00
+            .ten.columns.location
+              %h5
+                Dayton Ruby Brigade 6:00 PM
+                = link_to "@ Littlelines HQ"
+
+%section.connect
+  .row
+    .twelve.columns.centered
+      .row
+        .six.columns
+          %h3
+            Can I Join?
+          %p
+            Yes! Sign up at Meetup.com or just show up at our next meeting. Meetings are held on the fourth Tuesday of every month.
+            You are not expected to be an expert, so relax and have fun.
+            %i.foundicon-right-arrow
+        .six.columns
+          %h3
+            Stay Connected
+          .row
+            %br/
+            .eight.columns
+              .row
+                .four.columns.text-center.mobile-four
+                  %a{:href => "https://twitter.com/datytonruby", :rel => "external"}
+                    %span.ss-social-circle.ss-twitter
+                      %div.hide-text Twitter
+                .four.columns.text-center.mobile-four
+                  %a{:href => "mailto:datytonruby@gmail.com", :rel => "external"}
+                    %span.ss-social-circle.ss-mail
+                      %div.hide-text Email
+                .four.columns.text-center.mobile-four
+                  %a{:href => "http://github.com/daytonrb", :rel => "external"}
+                    %span.ss-social-circle.ss-octocat
+                      %div.hide-text Github

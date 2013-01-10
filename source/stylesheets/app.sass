@@ -1,44 +1,13 @@
 // Your custom settings file to override Foundation defaults
 @import settings
 @import foundation
-@import "compass/css3"
-// @import "foundation/settings";
-// @import "foundation/functions/all";
+@import "general_foundicons"
 
-// Control which mixins you have access too
-// @import "foundation/mixins/clearfix";
-// @import "foundation/mixins/css-triangle";
+@import "compass/css3"
 @import "foundation/mixins/font-size"
 
 // Must include next two for semantic grid to work
 @import "foundation/mixins/respond-to"
-// @import "foundation/mixins/semantic-grid";
-
-// @import "modular-scale";
-// @import "foundation/common/globals";
-
-// Must include the grid for any responsiveness
-
-// @import "foundation/components/grid";
-
-// Control which common styles get compiled
-
-// @import "foundation/common/typography";
-// @import "foundation/common/forms";
-
-// Control which components you get if customizing
-
-// @import "foundation/components/modules/buttons";
-// @import "foundation/components/modules/tabs";
-// @import "foundation/components/modules/ui";
-// @import "foundation/components/modules/topbar";
-// @import "foundation/components/modules/navbar";
-// @import "foundation/components/modules/orbit";
-// @import "foundation/components/modules/reveal";
-// @import "foundation/components/modules/offcanvas";
-
-// Media Queries Overrides
-// @import "foundation/components/modules/mqueries";
 
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif)
 @import url(http://fonts.googleapis.com/css?family=PT+Sans)
@@ -58,8 +27,8 @@
 .capitalize
   text-transform: uppercase
 
-.ss-social
-  +font-size(18)
+.ss-social-circle
+  +font-size(82)
 
 h2, h3, h4, h5, h6
   span
@@ -68,6 +37,9 @@ h2, h3, h4, h5, h6
 p
   +font-size(16)
   line-height: 1.8
+
+i
+  color: $mainColor
 
 body
   background-color: $backgroundColor
@@ -86,22 +58,24 @@ section.home
     background: transparent url(/images/skyline.png) no-repeat bottom center
 
   .splash
+
     margin: 0 auto
     background: transparent url(/images/splash.png) no-repeat top center
     background-size: 100%
-    max-height: 314px
-    max-width: 719px
+    max-height: 310px
+    max-width: 681px
     padding-bottom: 36.25%
 
 section.banner
   background-color: $white
 
   h4, h5
+    +font-size(28)
     font-weight: bold
-    line-height: 0.3em
+    line-height: 1em
     +respondTo(smallScreen)
       line-height: 1em
-    span
+    a
       text-transform: none
   img
     margin-top: 20%
@@ -112,8 +86,8 @@ section.banner
 
 
 section.manifesto
+  padding: 4em 0
   +box-shadow(rgba(black, 0.40) 0 1px 5px -1px inset)
-  min-height: 30em
   background: #f2e8da url(/images/sand-bg.png) repeat 0 0
 
   .social-circle
@@ -121,13 +95,28 @@ section.manifesto
     max-width: 100%
     background: transparent url(/images/red-circle.png) no-repeat bottom center
 
-section.sponsors
-  padding-top: 0
+section.calendar
+  padding-bottom: 4em
   background: #fff url(/images/paper-bg.png) repeat 0 0
 
-  .row:first-child
-    min-height: 30em
+  .row.ribbon
+    min-height: 3em
     background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center
+
+  .event
+    margin-bottom: 1em
+    border: 1px solid $purple
+    .date
+      border-right: 1px solid $purple
+    .location
+      padding-top: 1em
+    h4
+      font-weight: bold
+      +font-size(26)
+
+section.connect
+  padding: 2em 0 1em 0
+  background: #fff url(/images/stone-bg.png) repeat 0 0
 
 footer
   background-color: #dbd2c6
