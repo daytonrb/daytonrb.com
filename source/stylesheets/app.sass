@@ -44,27 +44,44 @@ i
 body
   background-color: $backgroundColor
 
+section
+  h3
+    font-style: italic
+
 section.header
   height: 20px
 
 section.home
-  padding: 2em 0 0 0
-  min-height: 500px
+  +respondTo(smallScreen)
+    padding: 0
+  +respondTo(mediumScreen)
+    padding: 2em 0 0 0
+  +respondTo(largeScreen)
+    padding: 2em 0 0 0
+
   background: #f04b42 url(/images/top-bg.png) repeat 0 0
 
-  .row:first-child
-    height: 100%
-    padding-bottom: 4em
+  h2
+    +respondTo(smallScreen)
+      font-size: 2em
+    +respondTo(mediumScreen)
+      font-size: 2.5em
+    +respondTo(largeScreen)
+      font-size: 2.5em
+
+  .skyline
+    background-size: 100%
     background: transparent url(/images/skyline.png) no-repeat bottom center
 
   .splash
-
     margin: 0 auto
     background: transparent url(/images/splash.png) no-repeat top center
     background-size: 100%
     max-height: 310px
     max-width: 681px
     padding-bottom: 36.25%
+    +respondTo(smallScreen)
+      padding-bottom: 43.25%
 
 section.banner
   background-color: $white
@@ -99,20 +116,33 @@ section.calendar
   padding-bottom: 4em
   background: #fff url(/images/paper-bg.png) repeat 0 0
 
+  .map
+    background: transparent url(/images/map.png) no-repeat top center
+    padding-top: 1em
+    padding-bottom: 7em
+    p
+      +font-size(20)
+
   .row.ribbon
     min-height: 3em
     background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center
 
   .event
-    margin-bottom: 1em
+    margin-bottom: 0.8em
     border: 1px solid $purple
     .date
       border-right: 1px solid $purple
     .location
       padding-top: 1em
     h4
+      text-align: center
+      line-height: 1.2em
+      text-transform: uppercase
       font-weight: bold
-      +font-size(26)
+      +font-size(22)
+      span
+        color: $black
+        +font-size(32)
 
 section.connect
   padding: 2em 0 1em 0
