@@ -10,6 +10,7 @@ group :production do
   gem 'thin'
   gem 'dalli'
   gem 'rack-cache'
+  gem 'heroku'
 end
 
 group :development do
