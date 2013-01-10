@@ -8,7 +8,6 @@
 
 require "zurb-foundation"
 
-
 activate :livereload
 
 # Change Compass configuration
@@ -46,11 +45,14 @@ activate :livereload
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+
+  def link_to_map(title)
+    google_map = "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=50+Chestnut+Street,+Beavercreek,+OH+45440&aq=&sll=39.694846,-84.103514&sspn=0.010253,0.023378&vpsrc=0&ie=UTF8&hq=&hnear=50+Chestnut+St,+Beavercreek,+Greene,+Ohio+45440&t=m&z=17"
+    link_to(title, google_map, :rel => 'external')
+  end
+
+end
 
 set :css_dir, 'stylesheets'
 
@@ -80,3 +82,4 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
