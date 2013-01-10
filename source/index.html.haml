@@ -3,16 +3,19 @@ title: Dayton Ruby Brigade
 ---
 
 %section.home
-  .row
-    .twelve.columns.centered
-      .splash
-        %h1.hide-text
-          Dayton Ruby Brigade
-        %h2.hide-text
-          Attention Rubyist: Dayton Ohio knows what ruby is and how to use it!
-      %h2
-        A Southern Ohio based group of local developers who meet to talk about
-        Ruby and lean new things.
+  .skyline
+    .row
+      .twelve.columns.centered
+        .splash
+          %h1.hide-text
+            Dayton Ruby Brigade
+          %h2.hide-text
+            Attention Rubyist: Join us each month to discuss all things Ruby!
+        %h2.text-center
+          Dayton.rb is a monthly gathering of local technologists who meet to
+          talk about all things Ruby.
+        %br/
+        %br/
 
 %section.banner
   .row
@@ -24,7 +27,7 @@ title: Dayton Ruby Brigade
           .eleven.columns
             %h4.capitalize
               Next Meeting:
-              = link_to "Tuesday, Jan 22 2013 at 6:00PM", "#"
+              = link_to "Tuesday, Jan 22 2013 at 6:00PM", "http://anyvite.com/5hlbwqjsfi"
 
 %section.manifesto
   .row
@@ -33,13 +36,23 @@ title: Dayton Ruby Brigade
         .six.columns
           %h3.text-center About
           %p
-            You can start by signing up for email updates. Then check out the fun people who thought this Ruby Group would be a
-            good idea. Then be sure to clear your calender for the next meeting.
-        .six.columns
-          %h3.text-center Why?
+            We are group of programmers, students, and technology enthusiasts who are
+            excited about the Ruby programming language and the Ruby on Rails
+            web framework.
           %p
-            We are excited that you have come here to learn how to get involved in the growing Ruby community here in Dayton. If
-            you have any questions hit us up on our twitter page or fill out the contact form below.
+            We meet on the fourth Tuesday of every month to contribute to open
+            source, work on personal projects, and present topics related to
+            Ruby. All skill levels are welcome!
+
+        .six.columns
+          %h3.text-center Why Dayton.rb?
+          %p
+            We are excited with the growing Ruby crowd here in Dayton. The Ruby
+            community is known for their sharing and collaboration, and
+            we want to take an active role.
+          %p
+            Our goal is to create an environment where rubyist of
+            all skill levels can learn and share ideas.
 
 %section.calendar
   .row
@@ -48,55 +61,54 @@ title: Dayton Ruby Brigade
       .row
         .six.columns
           %h3.text-center Where We Meet
-          %p
-            Today we meet on the third tuesday of every month to discuss and hack on Ruby code and strive to keep to the principle of less slides more code.
-          %p
-            = link_to "Littlelines HQ", "http://littlelines.com", :rel => 'external'
-            %br/
-            50 Chestnut Street
-            %br/
-            Suite 224
-            %br/
-            Beavercreek, Ohio 45440
-          %p
-            = link_to "#" do
-              = image_tag 'icon-locate.png'
-            = link_to "Get Directions", "#"
+          .map
+            %p
+              %strong
+                = link_to "Littlelines HQ", "http://littlelines.com", :rel => 'external'
+              %br/
+              50 Chestnut Street
+              %br/
+              Suite 224
+              %br/
+              Beavercreek, Ohio 45440
+            %p
+              = link_to_map image_tag( 'icon-locate.png')
+              = link_to_map "Get Directions"
 
         .six.columns
           %h3.text-center Upcoming Events
           .row.event
-            .two.columns.date.text-center
+            .two.columns.date
               %h4
                 Feb
-                %br/
-                00
+                %span
+                  26
             .ten.columns.location
               %h5
                 Dayton Ruby Brigade 6:00 PM
-                = link_to "@ Littlelines HQ"
+                = link_to_map "@ Littlelines HQ"
 
           .row.event
             .two.columns.date.text-center
               %h4
                 Mar
-                %br/
-                00
+                %span
+                  26
             .ten.columns.location
               %h5
                 Dayton Ruby Brigade 6:00 PM
-                = link_to "@ Littlelines HQ"
+                = link_to "@ Littlelines HQ", "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=50+Chestnut+Street,+Beavercreek,+OH+45440&aq=&sll=39.694846,-84.103514&sspn=0.010253,0.023378&vpsrc=0&ie=UTF8&hq=&hnear=50+Chestnut+St,+Beavercreek,+Greene,+Ohio+45440&t=m&z=17"
 
           .row.event
             .two.columns.date.text-center
               %h4
                 Apr
-                %br/
-                00
+                %span
+                  23
             .ten.columns.location
               %h5
                 Dayton Ruby Brigade 6:00 PM
-                = link_to "@ Littlelines HQ"
+                = link_to "@ Littlelines HQ", "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=50+Chestnut+Street,+Beavercreek,+OH+45440&aq=&sll=39.694846,-84.103514&sspn=0.010253,0.023378&vpsrc=0&ie=UTF8&hq=&hnear=50+Chestnut+St,+Beavercreek,+Greene,+Ohio+45440&t=m&z=17"
 
 %section.connect
   .row
@@ -106,7 +118,9 @@ title: Dayton Ruby Brigade
           %h3
             Can I Join?
           %p
-            Yes! Sign up at Meetup.com or just show up at our next meeting. Meetings are held on the fourth Tuesday of every month.
+            Yes!
+            = link_to "RSVP", "http://anyvite.com/5hlbwqjsfi"
+            or just show up at our next meeting. Meetings are held on the fourth Tuesday of every month.
             You are not expected to be an expert, so relax and have fun.
             %i.foundicon-right-arrow
         .six.columns
@@ -124,7 +138,7 @@ title: Dayton Ruby Brigade
                   %a{:href => "mailto:datytonruby@gmail.com", :rel => "external"}
                     %span.ss-social-circle.ss-mail
                       %div.hide-text Email
-                .four.columns.text-center.mobile-four
+                .four.columns.text-center.mobile-four.hide
                   %a{:href => "http://github.com/daytonrb", :rel => "external"}
                     %span.ss-social-circle.ss-octocat
                       %div.hide-text Github
