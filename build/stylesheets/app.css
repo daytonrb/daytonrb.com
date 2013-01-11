@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=PT+Sans);
-/* $columnGutter: 30px */
 /* Requires: normalize.css */
 /* Global Reset & Standards ---------------------- */
 /* line 5, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/common/_globals.scss */
@@ -765,7 +764,7 @@ form.custom {
     width: auto;
     max-width: none;
     min-width: 0;
-    margin: 0 -15px; }
+    margin: 0 -20px; }
   /* line 7, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/_grid.scss */
   .row.collapse .column, .row.collapse .columns {
     padding: 0; }
@@ -774,7 +773,7 @@ form.custom {
     width: auto;
     max-width: none;
     min-width: 0;
-    margin: 0 -15px; }
+    margin: 0 -20px; }
     /* line 10, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/_grid.scss */
     .row .row.collapse {
       margin: 0; }
@@ -783,7 +782,7 @@ form.custom {
 .column, .columns {
   float: left;
   min-height: 1px;
-  padding: 0 15px;
+  padding: 0 20px;
   position: relative; }
   /* line 15, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/_grid.scss */
   .column.centered, .columns.centered {
@@ -4074,7 +4073,7 @@ table.hide-for-medium {
   .row .mobile-one {
     width: 25% !important;
     float: left;
-    padding: 0 15px; }
+    padding: 0 20px; }
     /* line 201, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
     .row .mobile-one:last-child {
       float: right; }
@@ -4089,7 +4088,7 @@ table.hide-for-medium {
   .row .mobile-two {
     width: 50% !important;
     float: left;
-    padding: 0 15px; }
+    padding: 0 20px; }
     /* line 201, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
     .row .mobile-two:last-child {
       float: right; }
@@ -4104,7 +4103,7 @@ table.hide-for-medium {
   .row .mobile-three {
     width: 75% !important;
     float: left;
-    padding: 0 15px; }
+    padding: 0 20px; }
     /* line 201, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
     .row .mobile-three:last-child {
       float: right; }
@@ -4119,7 +4118,7 @@ table.hide-for-medium {
   .row .mobile-four {
     width: 100% !important;
     float: left;
-    padding: 0 15px; }
+    padding: 0 20px; }
     /* line 201, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
     .row .mobile-four:last-child {
       float: right; }
@@ -5050,7 +5049,6 @@ table.hide-for-medium {
   /* line 456, ../../../../../.rbenv/versions/1.9.3-p362/gemsets/daytonrb/gems/zurb-foundation-3.2.3/scss/foundation/components/modules/_mqueries.scss */
   .top-bar ul > li.has-button a.button {
     margin: 0; } }
-/* $columnGutter: 30px */
 /* font-face */
 @font-face {
   font-family: "GeneralFoundicons";
@@ -5290,64 +5288,68 @@ table.hide-for-medium {
   font-size: 82px;
   font-size: 8.2rem; }
 
-/* line 34, app.sass */
+/* line 33, app.sass */
+a:hover {
+  text-decoration: underline; }
+
+/* line 37, app.sass */
 h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #f35a51; }
 
-/* line 37, app.sass */
+/* line 40, app.sass */
 p {
   font-size: 16px;
   font-size: 1.6rem;
   line-height: 1.8; }
 
-/* line 41, app.sass */
+/* line 44, app.sass */
 i {
   color: #f35a51; }
 
-/* line 44, app.sass */
+/* line 47, app.sass */
 body {
   background-color: transparent; }
 
-/* line 48, app.sass */
+/* line 51, app.sass */
 section h3 {
   font-style: italic; }
 
-/* line 51, app.sass */
+/* line 54, app.sass */
 section.header {
   height: 20px; }
 
-/* line 54, app.sass */
+/* line 57, app.sass */
 section.home {
   background: #f04b42 url(/images/top-bg.png) repeat 0 0; }
   @media only screen and (max-width: 767px) {
-    /* line 54, app.sass */
+    /* line 57, app.sass */
     section.home {
       padding: 0; } }
   @media only screen and (max-width: 1279px) and (min-width: 768px) {
-    /* line 54, app.sass */
+    /* line 57, app.sass */
     section.home {
       padding: 2em 0 0 0; } }
   @media only screen and (min-width: 1441px) {
-    /* line 54, app.sass */
+    /* line 57, app.sass */
     section.home {
       padding: 2em 0 0 0; } }
   @media only screen and (max-width: 767px) {
-    /* line 64, app.sass */
+    /* line 67, app.sass */
     section.home h2 {
       font-size: 2em; } }
   @media only screen and (max-width: 1279px) and (min-width: 768px) {
-    /* line 64, app.sass */
+    /* line 67, app.sass */
     section.home h2 {
       font-size: 2.5em; } }
   @media only screen and (min-width: 1441px) {
-    /* line 64, app.sass */
+    /* line 67, app.sass */
     section.home h2 {
       font-size: 2.5em; } }
-  /* line 72, app.sass */
+  /* line 75, app.sass */
   section.home .skyline {
     background-size: 100%;
     background: transparent url(/images/skyline.png) no-repeat bottom center; }
-  /* line 76, app.sass */
+  /* line 79, app.sass */
   section.home .splash {
     margin: 0 auto;
     background: transparent url(/images/splash.png) no-repeat top center;
@@ -5356,96 +5358,102 @@ section.home {
     max-width: 681px;
     padding-bottom: 36.25%; }
     @media only screen and (max-width: 767px) {
-      /* line 76, app.sass */
+      /* line 79, app.sass */
       section.home .splash {
         padding-bottom: 43.25%; } }
 
-/* line 86, app.sass */
+/* line 89, app.sass */
 section.banner {
   background-color: white; }
-  /* line 89, app.sass */
+  /* line 92, app.sass */
   section.banner h4, section.banner h5 {
     font-size: 28px;
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1em; }
     @media only screen and (max-width: 767px) {
-      /* line 89, app.sass */
+      /* line 92, app.sass */
       section.banner h4, section.banner h5 {
         line-height: 1em; } }
-    /* line 95, app.sass */
+    /* line 98, app.sass */
     section.banner h4 a, section.banner h5 a {
       text-transform: none; }
-  /* line 97, app.sass */
+  /* line 100, app.sass */
   section.banner img {
     margin-top: 20%; }
     @media only screen and (max-width: 767px) {
-      /* line 97, app.sass */
+      /* line 100, app.sass */
       section.banner img {
-        margin-top: 0; } }
-  /* line 101, app.sass */
+        margin-top: -2px; } }
+  /* line 104, app.sass */
   section.banner .message {
     padding: 2em 0; }
 
-/* line 105, app.sass */
+/* line 108, app.sass */
 section.manifesto {
-  padding: 4em 0;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
+  padding: 3em 0;
   background: #f2e8da url(/images/sand-bg.png) repeat 0 0; }
-  /* line 110, app.sass */
+  /* line 113, app.sass */
   section.manifesto .social-circle {
     margin-bottom: 1em;
     max-width: 100%;
     background: transparent url(/images/red-circle.png) no-repeat bottom center; }
 
-/* line 115, app.sass */
+/* line 118, app.sass */
 section.calendar {
-  padding-bottom: 4em;
+  padding-bottom: 0;
   background: white url(/images/paper-bg.png) repeat 0 0; }
-  /* line 119, app.sass */
+  /* line 122, app.sass */
   section.calendar .map {
     background: transparent url(/images/map.png) no-repeat top center;
     padding-top: 1em;
     padding-bottom: 7em; }
-    /* line 123, app.sass */
+    /* line 126, app.sass */
     section.calendar .map p {
       font-size: 20px;
       font-size: 2rem; }
-  /* line 126, app.sass */
+  /* line 129, app.sass */
   section.calendar .row.ribbon {
     min-height: 3em;
     background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center; }
-  /* line 130, app.sass */
+  /* line 133, app.sass */
   section.calendar .event {
-    margin-bottom: 0.8em;
+    margin: 0 0 0.8em 5px;
     border: 1px solid #727a95; }
-    /* line 133, app.sass */
+    /* line 136, app.sass */
     section.calendar .event .date {
       border-right: 1px solid #727a95; }
-    /* line 135, app.sass */
+      @media only screen and (max-width: 767px) {
+        /* line 136, app.sass */
+        section.calendar .event .date {
+          border-right: none;
+          border-bottom: 1px solid #727a95; } }
+    /* line 142, app.sass */
     section.calendar .event .location {
-      padding-top: 1em; }
-    /* line 137, app.sass */
+      padding-top: 1.2em;
+      font-size: 18px;
+      font-size: 1.8rem; }
+    /* line 145, app.sass */
     section.calendar .event h4 {
-      text-align: center;
       line-height: 1.2em;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 22px;
-      font-size: 2.2rem; }
-      /* line 143, app.sass */
+      font-size: 20px;
+      font-size: 2rem; }
+      /* line 150, app.sass */
       section.calendar .event h4 span {
         color: #2b2f3d;
         font-size: 32px;
         font-size: 3.2rem; }
 
-/* line 147, app.sass */
+/* line 154, app.sass */
 section.connect {
   padding: 2em 0 1em 0;
   background: white url(/images/stone-bg.png) repeat 0 0; }
 
-/* line 151, app.sass */
+/* line 158, app.sass */
 footer {
   background-color: #dbd2c6; }

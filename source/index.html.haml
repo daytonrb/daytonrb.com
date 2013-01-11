@@ -25,7 +25,7 @@ title: Dayton Ruby Brigade
       .ten.columns.message
         .row
           .eleven.columns
-            %h4.capitalize
+            %h4.capitalize.text-center
               Next Meeting:
               = link_to "Tuesday, Jan 22 2013 at 6:00PM", "http://anyvite.com/5hlbwqjsfi"
 
@@ -75,7 +75,7 @@ title: Dayton Ruby Brigade
               = link_to_map image_tag( 'icon-locate.png')
               = link_to_map "Get Directions"
 
-        .six.columns
+        .six.columns.upcoming
           %h3.text-center Upcoming Events
           .row.event
             .two.columns.date
@@ -85,30 +85,30 @@ title: Dayton Ruby Brigade
                   26
             .ten.columns.location
               %h5
-                Dayton Ruby Brigade 6:00 PM
-                = link_to_map "@ Littlelines HQ"
+                Dayton Ruby Brigade at
+                = link_to_map "Littlelines HQ"
 
           .row.event
-            .two.columns.date.text-center
+            .two.columns.date
               %h4
                 Mar
                 %span
                   26
             .ten.columns.location
               %h5
-                Dayton Ruby Brigade 6:00 PM
-                = link_to "@ Littlelines HQ", "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=50+Chestnut+Street,+Beavercreek,+OH+45440&aq=&sll=39.694846,-84.103514&sspn=0.010253,0.023378&vpsrc=0&ie=UTF8&hq=&hnear=50+Chestnut+St,+Beavercreek,+Greene,+Ohio+45440&t=m&z=17"
+                Dayton Ruby Brigade at
+                = link_to_map "Littlelines HQ"
 
           .row.event
-            .two.columns.date.text-center
+            .two.columns.date
               %h4
                 Apr
                 %span
                   23
-            .ten.columns.location
+            .nine.columns.location
               %h5
-                Dayton Ruby Brigade 6:00 PM
-                = link_to "@ Littlelines HQ", "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=50+Chestnut+Street,+Beavercreek,+OH+45440&aq=&sll=39.694846,-84.103514&sspn=0.010253,0.023378&vpsrc=0&ie=UTF8&hq=&hnear=50+Chestnut+St,+Beavercreek,+Greene,+Ohio+45440&t=m&z=17"
+                Dayton Ruby Brigade at
+                = link_to_map "Littlelines HQ"
 
 %section.connect
   .row
@@ -128,17 +128,13 @@ title: Dayton Ruby Brigade
             Stay Connected
           .row
             %br/
-            .eight.columns
+            .five.columns
               .row
-                .four.columns.text-center.mobile-four
+                .five.columns.text-center.mobile-two
                   %a{:href => "https://twitter.com/datytonruby", :rel => "external"}
                     %span.ss-social-circle.ss-twitter
                       %div.hide-text Twitter
-                .four.columns.text-center.mobile-four
-                  %a{:href => "mailto:datytonruby@gmail.com", :rel => "external"}
-                    %span.ss-social-circle.ss-mail
-                      %div.hide-text Email
-                .four.columns.text-center.mobile-four.hide
+                .five.columns.text-center.mobile-two
                   %a{:href => "http://github.com/daytonrb", :rel => "external"}
                     %span.ss-social-circle.ss-octocat
                       %div.hide-text Github

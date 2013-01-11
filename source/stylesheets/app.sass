@@ -30,6 +30,9 @@
 .ss-social-circle
   +font-size(82)
 
+a:hover
+  text-decoration: underline
+
 h2, h3, h4, h5, h6
   span
     color: $mainColor
@@ -97,14 +100,14 @@ section.banner
   img
     margin-top: 20%
     +respondTo(smallScreen)
-      margin-top: 0
+      margin-top: -2px
   .message
     padding: 2em 0
 
 
 section.manifesto
-  padding: 4em 0
   +box-shadow(rgba(black, 0.40) 0 1px 5px -1px inset)
+  padding: 3em 0
   background: #f2e8da url(/images/sand-bg.png) repeat 0 0
 
   .social-circle
@@ -113,7 +116,7 @@ section.manifesto
     background: transparent url(/images/red-circle.png) no-repeat bottom center
 
 section.calendar
-  padding-bottom: 4em
+  padding-bottom: 0
   background: #fff url(/images/paper-bg.png) repeat 0 0
 
   .map
@@ -128,18 +131,22 @@ section.calendar
     background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center
 
   .event
-    margin-bottom: 0.8em
+    margin: 0 0 0.8em 5px
     border: 1px solid $purple
     .date
       border-right: 1px solid $purple
+      +respondTo(smallScreen)
+        border-right: none
+        border-bottom: 1px solid $purple
+
     .location
-      padding-top: 1em
+      padding-top: 1.2em
+      +font-size(18)
     h4
-      text-align: center
       line-height: 1.2em
       text-transform: uppercase
       font-weight: bold
-      +font-size(22)
+      +font-size(20)
       span
         color: $black
         +font-size(32)
