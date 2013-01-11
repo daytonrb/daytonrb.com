@@ -5361,99 +5361,129 @@ section.home {
       /* line 79, app.sass */
       section.home .splash {
         padding-bottom: 43.25%; } }
+    @media only screen and (max-width: 1279px) and (min-width: 768px) {
+      /* line 79, app.sass */
+      section.home .splash {
+        padding-bottom: 45.25%; } }
 
-/* line 89, app.sass */
+/* line 91, app.sass */
 section.banner {
   background-color: white; }
-  /* line 92, app.sass */
+  /* line 94, app.sass */
   section.banner h4, section.banner h5 {
     font-size: 28px;
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1em; }
     @media only screen and (max-width: 767px) {
-      /* line 92, app.sass */
+      /* line 94, app.sass */
       section.banner h4, section.banner h5 {
         line-height: 1em; } }
-    /* line 98, app.sass */
+    /* line 100, app.sass */
     section.banner h4 a, section.banner h5 a {
       text-transform: none; }
-  /* line 100, app.sass */
+      /* line 102, app.sass */
+      section.banner h4 a:hover, section.banner h5 a:hover {
+        text-decoration: none; }
+    /* line 104, app.sass */
+    section.banner h4 i, section.banner h5 i {
+      margin-left: 2px; }
+  /* line 106, app.sass */
   section.banner img {
     margin-top: 20%; }
     @media only screen and (max-width: 767px) {
-      /* line 100, app.sass */
+      /* line 106, app.sass */
       section.banner img {
         margin-top: -2px; } }
-  /* line 104, app.sass */
+  /* line 111, app.sass */
   section.banner .message {
     padding: 2em 0; }
 
-/* line 108, app.sass */
+/* line 115, app.sass */
 section.manifesto {
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
   box-shadow: rgba(0, 0, 0, 0.4) 0 1px 5px -1px inset;
   padding: 3em 0;
   background: #f2e8da url(/images/sand-bg.png) repeat 0 0; }
-  /* line 113, app.sass */
+  /* line 120, app.sass */
   section.manifesto .social-circle {
     margin-bottom: 1em;
     max-width: 100%;
     background: transparent url(/images/red-circle.png) no-repeat bottom center; }
 
-/* line 118, app.sass */
+/* line 125, app.sass */
 section.calendar {
   padding-bottom: 0;
   background: white url(/images/paper-bg.png) repeat 0 0; }
-  /* line 122, app.sass */
+  /* line 129, app.sass */
   section.calendar .map {
     background: transparent url(/images/map.png) no-repeat top center;
     padding-top: 1em;
     padding-bottom: 7em; }
-    /* line 126, app.sass */
+    /* line 133, app.sass */
     section.calendar .map p {
       font-size: 20px;
       font-size: 2rem; }
-  /* line 129, app.sass */
+  /* line 136, app.sass */
   section.calendar .row.ribbon {
     min-height: 3em;
     background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center; }
-  /* line 133, app.sass */
+  /* line 140, app.sass */
   section.calendar .event {
     margin: 0 0 0.8em 5px;
     border: 1px solid #727a95; }
-    /* line 136, app.sass */
+    /* line 143, app.sass */
     section.calendar .event .date {
       border-right: 1px solid #727a95; }
       @media only screen and (max-width: 767px) {
-        /* line 136, app.sass */
+        /* line 143, app.sass */
         section.calendar .event .date {
           border-right: none;
           border-bottom: 1px solid #727a95; } }
-    /* line 142, app.sass */
+    /* line 149, app.sass */
     section.calendar .event .location {
       padding-top: 1.2em;
       font-size: 18px;
       font-size: 1.8rem; }
-    /* line 145, app.sass */
+    /* line 152, app.sass */
     section.calendar .event h4 {
       line-height: 1.2em;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 20px;
       font-size: 2rem; }
-      /* line 150, app.sass */
+      @media only screen and (max-width: 1279px) and (min-width: 768px) {
+        /* line 152, app.sass */
+        section.calendar .event h4 {
+          line-height: 2em;
+          font-size: 18px;
+          font-size: 1.8rem; } }
+      /* line 160, app.sass */
       section.calendar .event h4 span {
         color: #2b2f3d;
         font-size: 32px;
         font-size: 3.2rem; }
+        @media only screen and (max-width: 1279px) and (min-width: 768px) {
+          /* line 160, app.sass */
+          section.calendar .event h4 span {
+            font-size: 22px;
+            font-size: 2.2rem; } }
 
-/* line 154, app.sass */
+/* line 167, app.sass */
 section.connect {
   padding: 2em 0 1em 0;
   background: white url(/images/stone-bg.png) repeat 0 0; }
 
-/* line 158, app.sass */
+/* line 171, app.sass */
 footer {
+  padding: 1em 0;
+  color: #fff5e7;
   background-color: #dbd2c6; }
+  /* line 175, app.sass */
+  footer p {
+    font-size: 13px;
+    font-size: 1.3rem; }
+  /* line 177, app.sass */
+  footer a {
+    color: #fff5e7; }

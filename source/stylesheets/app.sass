@@ -85,6 +85,8 @@ section.home
     padding-bottom: 36.25%
     +respondTo(smallScreen)
       padding-bottom: 43.25%
+    +respondTo(mediumScreen)
+      padding-bottom: 45.25%
 
 section.banner
   background-color: $white
@@ -97,10 +99,15 @@ section.banner
       line-height: 1em
     a
       text-transform: none
+      &:hover
+        text-decoration: none
+    i
+      margin-left: 2px
   img
     margin-top: 20%
     +respondTo(smallScreen)
       margin-top: -2px
+
   .message
     padding: 2em 0
 
@@ -147,13 +154,25 @@ section.calendar
       text-transform: uppercase
       font-weight: bold
       +font-size(20)
+      +respondTo(mediumScreen)
+        line-height: 2em
+        +font-size(18)
       span
         color: $black
         +font-size(32)
+        +respondTo(mediumScreen)
+          +font-size(22)
+
 
 section.connect
   padding: 2em 0 1em 0
   background: #fff url(/images/stone-bg.png) repeat 0 0
 
 footer
+  padding: 1em 0
+  color: #fff5e7
   background-color: #dbd2c6
+  p
+    +font-size(13)
+  a
+    color: #fff5e7

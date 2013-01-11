@@ -22,11 +22,13 @@
       .row
         .twelve.columns
           %br/
-          .row
-            .six.columns
-              %p
-                Designed and build by
+          .row.centered
+            .six.columns.centered
+              %p.capitalize.text-center
+                Supported by
+                = link_to image_tag('icon-littlelines.png')
                 = link_to "Littlelines", "http://littlelines.com"
-                2012
+                &copy;
+                = Time.now.year
 
     = javascript_include_tag  "all"
