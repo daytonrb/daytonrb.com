@@ -12,3 +12,7 @@ build
 
 # Ignore Sass' cache
 /.sass-cache
+
+# Ignore rbenv related files
+/.ruby-version
+/.rbenv-gemsets
