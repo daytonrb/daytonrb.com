@@ -10,6 +10,8 @@ require "zurb-foundation"
 
 activate :livereload
 
+activate :cache_buster
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact
