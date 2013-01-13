@@ -1,28 +1,18 @@
-// Your custom settings file to override Foundation defaults
+// Compass of course
 @import settings
-@import foundation
-@import "general_foundicons"
 
 @import "compass/css3"
-@import "foundation/mixins/font-size"
+@import "foundation"
+@import "general_foundicons"
 
-// Must include next two for semantic grid to work
-@import "foundation/mixins/respond-to"
-
+/* Fonts
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif)
 @import url(http://fonts.googleapis.com/css?family=PT+Sans)
-
 
 .hide-text
   font: 0/0 a
   text-shadow: none
   color: transparent
-
-.bb
-  border: 1px solid blue
-
-.bg
-  border: 1px solid green
 
 .capitalize
   text-transform: uppercase
@@ -52,14 +42,24 @@ section.header
   height: 20px
 
 section.home
+  background: #f04b42 url(/images/bg-ruby-red.png) repeat 0 0
+  padding: 2em 0 0 0
+
   +respondTo(smallScreen)
-    padding: 0
+    padding: 1em 0 0 0
   +respondTo(mediumScreen)
     padding: 2em 0 0 0
-  +respondTo(largeScreen)
-    padding: 2em 0 0 0
 
-  background: #f04b42 url(/images/top-bg.png) repeat 0 0
+  .banner
+    width: 100%
+    line-height: 3em
+    img
+      max-width: 100%
+
+  .title
+    margin: 0 auto
+    img
+      max-width: 100%
 
   h2
     +respondTo(smallScreen)
@@ -73,18 +73,6 @@ section.home
     background-size: 100%
     background: transparent url(/images/skyline.png) no-repeat bottom center
 
-  .splash
-    margin: 0 auto
-    background: transparent url(/images/splash.png) no-repeat top center
-    background-size: 100%
-    max-height: 310px
-    max-width: 681px
-    padding-bottom: 36.25%
-    +respondTo(smallScreen)
-      padding-bottom: 43.25%
-    +respondTo(mediumScreen)
-      padding-bottom: 45.25%
-
 section.banner
   background-color: $white
 
@@ -94,6 +82,9 @@ section.banner
     line-height: 1em
     +respondTo(smallScreen)
       line-height: 1em
+    +respondTo(mediumScreen)
+      +font-size(26)
+
     a
       text-transform: none
       &:hover
@@ -112,7 +103,7 @@ section.banner
 section.manifesto
   +box-shadow(rgba(black, 0.40) 0 1px 5px -1px inset)
   padding: 3em 0
-  background: #f2e8da url(/images/sand-bg.png) repeat 0 0
+  background: #f2e8da url(/images/bg-sand.png) repeat 0 0
 
   .social-circle
     margin-bottom: 1em
@@ -121,7 +112,7 @@ section.manifesto
 
 section.calendar
   padding-bottom: 0
-  background: #fff url(/images/paper-bg.png) repeat 0 0
+  background: #fff url(/images/bg-paper.png) repeat 0 0
 
   .map
     background: transparent url(/images/map.png) no-repeat top center
@@ -131,13 +122,12 @@ section.calendar
       +font-size(20)
 
   .row.ribbon
-    min-height: 3em
-    background: transparent url(/images/ruby-ribbon-small.png) no-repeat top center
 
   .event
     margin: 0 0 0.8em 5px
     border: 1px solid $purple
     .date
+      text-align: center
       border-right: 1px solid $purple
       +respondTo(smallScreen)
         border-right: none
@@ -146,11 +136,19 @@ section.calendar
     .location
       padding-top: 1.2em
       +font-size(18)
+      +respondTo(smallScreen)
+        padding-top: 0.5em
+
+    h5
+      +respondTo(smallScreen)
+        +font-size(22)
     h4
       line-height: 1.2em
       text-transform: uppercase
       font-weight: bold
       +font-size(20)
+      +respondTo(smallScreen)
+        +font-size(32)
       +respondTo(mediumScreen)
         line-height: 2em
         +font-size(18)
@@ -163,7 +161,7 @@ section.calendar
 
 section.connect
   padding: 2em 0 1em 0
-  background: #fff url(/images/stone-bg.png) repeat 0 0
+  background: #fff url(/images/bg-stone.png) repeat 0 0
 
 footer
   padding: 1em 0

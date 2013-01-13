@@ -6,11 +6,10 @@ title: Dayton Ruby Brigade
   .skyline
     .row
       .twelve.columns.centered
-        .splash
-          %h1.hide-text
-            Dayton Ruby Brigade
-          %h2.hide-text
-            Attention Rubyist: Join us each month to discuss all things Ruby!
+        .banner.text-center
+          = image_tag 'banner_plane@2x.png', width: '646', height: '77'
+        .title.text-center
+          = image_tag 'title.png', width: '611', height: '202'
         %h2.text-center
           Dayton.rb is a monthly gathering of local technologists who meet to
           talk about all things Ruby.
@@ -21,14 +20,14 @@ title: Dayton Ruby Brigade
   .row
     .twelve.columns
       .two.mobile-twelve.columns.text-center
-        = image_tag 'ruby-ribbon.png', width: 71, height: 69
+        = image_tag 'redflag@2x.png', width: 71, height: 69
       .ten.columns.message
         .row
           .eleven.columns
             %h4.capitalize.text-center
               Next Meeting:
-              = link_to "http://anyvite.com/5hlbwqjsfi", :rel => "external" do
-                Tuesday, Jan 22 2013 at 6:00PM
+              = link_to data.meetups.first.url, :rel => "external" do
+                = data.meetups.first.time
                 %i.foundicon-right-arrow
 
 %section.manifesto
@@ -59,7 +58,9 @@ title: Dayton Ruby Brigade
 %section.calendar
   .row
     .twelve.columns.centered
-      .row.ribbon
+      .row.text-center
+        = image_tag 'beigeflag@2x.png', width: '71', height: '69'
+
       .row
         .six.columns
           %h3.text-center Where We Meet
@@ -76,9 +77,8 @@ title: Dayton Ruby Brigade
               %br/
               Beavercreek, Ohio 45440
             %p
-              = link_to_map image_tag( 'icon-locate.png')
+              = link_to_map image_tag( 'icon-locate@2x.png', width: 16, height: 21)
               = link_to_map "Get Directions"
-
         .six.columns.upcoming
           %h3.text-center Upcoming Events
           .row.event
@@ -109,7 +109,7 @@ title: Dayton Ruby Brigade
                 Apr
                 %span
                   23
-            .nine.columns.location
+            .ten.columns.location
               %h5
                 Dayton Ruby Brigade at
                 = link_to_map "Littlelines HQ"
@@ -123,7 +123,7 @@ title: Dayton Ruby Brigade
             Can I Join?
           %p
             Yes!
-            = link_to "RSVP", "http://anyvite.com/5hlbwqjsfi"
+            = link_to "RSVP", data.meetups.first.url
             or just show up at our next meeting. Meetings are held on the fourth Tuesday of every month.
             You are not expected to be an expert, so relax and have fun.
             %i.foundicon-right-arrow
