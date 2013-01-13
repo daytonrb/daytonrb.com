@@ -1,0 +1,28 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Developer: Matt Sears
+  Site: http://littlelines.com
+  Twitter: http://twitter.com/littlelines
+  Location: D8N
+
+  Developer: Chris McCord
+  Site: http://chrismccord.com
+  Twitter: http://twitter.com/chris_mccord
+  Location: D8N
+
+  Developer: David Stump
+  Site: http://davidstump.net
+  Twitter: http://twitter.com/davidstump
+  Location: D8N
+
+  Designer: Beth Chasse
+  Site: http://bethchasse.com
+  Twitter: http://twitter.com/beth_chasse
+  Location: D8N
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Coffeescript, Sass, Haml
+  Software: Ruby, Rack, Middleman
