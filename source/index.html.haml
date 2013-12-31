@@ -26,8 +26,8 @@ title: Dayton Ruby Brigade
           .eleven.columns
             %h4.capitalize.text-center
               Next Meeting:
-              = link_to data.meetups.first.url, :rel => "external" do
-                = data.meetups.first.time
+              = link_to data.meetups.first.url, :rel => "external", id: "next_meetup" do
+                %span= data.meetups.first.time
                 %i.foundicon-right-arrow
 
 %section.manifesto
