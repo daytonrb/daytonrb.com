@@ -1,5 +1,5 @@
 source :rubygems
-ruby '2.2.4'
+ruby '2.1.2'
 
 gem "middleman", "~>3.0.7"
 gem 'middleman-livereload'
